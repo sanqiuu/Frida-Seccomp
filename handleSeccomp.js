@@ -1,6 +1,9 @@
+//
+const Target_NR = 64;
+
+
 let install_filter = null, syscall_thread_ptr, call_task, lock, unlock, findSoinfoByAddr, solist_get_head_ptr, get_soname, get_base, get_size, maps = [];
 const MAX_STACK_TRACE_DEPTH = 10;
-const Target_NR = 207;
 const prctl_ptr = Module.findExportByName(null, 'prctl')
 const strcpy_ptr = Module.findExportByName(null, 'strcpy')
 const fopen_ptr = Module.findExportByName(null, 'fopen')
