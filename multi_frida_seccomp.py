@@ -7,8 +7,8 @@ import time
 import subprocess
 import threading
 
-package_name = sys.argv[1]
-jscode = open("./handleSeccomp.js").read()
+package_name = "com.study_tool.x64"
+jscode = open("./handleSeccomp.js", encoding='UTF-8').read()
 dir_path = ""
 
 device = frida.get_device_manager().enumerate_devices()[-1]
