@@ -1,3 +1,4 @@
+# adb logcat -s "seccomp"
 # 一个Android通用svc跟踪以及hook方案——Frida-Seccomp
 
 ## 效果
